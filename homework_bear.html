@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+          }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    height: 550px;
+    width: 550px;
+    background: #000000;
+    border-radius: 50%;
+    position: relative;
+}
+
+.head::after{
+    content:'';
+    height: 50px;
+    width: 120px;
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.head::before{
+    content:'';
+    height: 150px;
+    width: 200px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+.ear1{
+    height: 100px;
+    width: 100px;
+    background: #000000;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 5px; 
+}
+.ear1::after{
+    content:'';
+    height: 65px;
+    width: 65px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.ear2{
+    height: 100px;
+    width: 100px;
+    background: #000000;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 5px;   
+}
+.ear2::after{
+    content:'';
+    height: 65px;
+    width: 65px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.eye1{
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+}
+
+.eye1::after{
+    content:'';
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.eye2{
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 25%;
+    right: 17%;
+}
+.eye2::after{
+    content:'';
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.nose{
+    height: 30px;
+    width: 50px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    top: -15%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.red{
+    height: 550px;
+    width: 550px;
+    /* background: #d62525; */
+    border-radius: 50%;
+}
+
+.red::after{
+    content: '';
+    height: 150px;
+    width: 150px;
+    background: #d62525;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: -5%;
+}
+.red::before{
+    content: '';
+    height: 150px;
+    width: 150px;
+    background: #d62525;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: -5%;
+}
+.v{
+    height: 550px;
+    width: 550px;
+    /* background: #d62525; */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.v::before{
+    content: '';
+    height: 90px;
+    width: 60px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translate(-50px,0) skew(40deg);
+}
+.v::after{
+    content: '';
+    height: 90px;
+    width: 60px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translate(50px,0) skew(-40deg);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="ear1"></div>
+        <div class="ear2"></div>
+        <div class="eye1"></div>
+        <div class="eye2"></div>
+        <div class="nose"></div>
+        <div class="red"></div>
+        <div class="v"></div>
+    </div>
+   
+
+</body>
+</html>

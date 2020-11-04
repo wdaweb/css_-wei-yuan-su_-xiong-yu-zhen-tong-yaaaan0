@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+          }
+          *::before *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+          }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 150px;
+            width: 500px;
+            border: 1px solid #000000;
+            position: relative;
+        }
+        .box::before{
+            content: "";
+            height: 100px;
+            width: 100px;
+            border: 1px solid #000000;
+            position: absolute;
+            top: 25px;
+            left: -100px;
+        }
+        .box::after{
+            content: "";
+            height: 100px;
+            width: 100px;
+            border: 1px solid #000000;
+            position: absolute;
+            top: 25px;
+            right:  -100px;
+        }
+        .box2{
+            height: 200px;
+            width: 800px;
+            /* border: 1px solid #000000; */
+            position: absolute
+        }
+        .box2::before{
+            content: "";
+            height: 200px;
+            width: 400px;
+            background: linear-gradient();
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
